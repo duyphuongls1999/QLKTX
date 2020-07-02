@@ -1,0 +1,91 @@
+﻿@model KTX.Models.QLSVModels
+
+@{
+    ViewBag.Title = "Chi tiết";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Header{
+    <h2 class="fa fa-home">
+        @Html.ActionLink("Quản lý sinh viên", "Index", new { /* id=item.PrimaryKey */ })
+    </h2>
+}
+
+<div>
+    <div class="btn btn-info">
+        @Html.ActionLink("Về danh sách", "Index")
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaSV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaSV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GioiTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CMND)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CMND)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QueQuan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QueQuan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Khoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Khoa)
+        </dd>
+        <dd>
+            <p class="btn btn-success">
+                @Html.ActionLink("Sửa", "Edit", new { /* id = Model.PrimaryKey */ })
+            </p>
+        </dd>
+
+    </dl>
+</div>
+

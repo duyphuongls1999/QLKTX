@@ -8,3 +8,13 @@ D:\THLVN\KTX\Models\bin\Debug\EntityFramework.SqlServer.xml
 D:\THLVN\KTX\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 D:\THLVN\KTX\Models\obj\Debug\Models.dll
 D:\THLVN\KTX\Models\obj\Debug\Models.pdb
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\Models.dll.config
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\Models.dll
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\Models.pdb
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\QLKTX\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\QLKTX\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\QLKTX\Models\obj\Debug\Models.dll
+C:\Users\DELL\Desktop\QLKTX\Models\obj\Debug\Models.pdb
