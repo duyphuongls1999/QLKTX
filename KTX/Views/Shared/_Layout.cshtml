@@ -280,7 +280,7 @@
                         </li>
                         
                         <li class="sub-menu">
-                            @Html.ActionLink("Quản lý sinh viên", "Index", "QLSV")
+                            @Html.ActionLink("Quản lý sinh viên", "Index", "QLSVs")
 
 
                         </li>
@@ -292,9 +292,7 @@
                             </a>
                         </li>
                         <li class="sub-menu">
-                            <a href="">
-                                Quản lí phòng-sinh viên
-                            </a>
+                            @Html.ActionLink("Quản lý phòng sinh viên", "Index", "QLPSV")
                         </li>
                         <li class="sub-menu">
                             <a href="">
@@ -331,9 +329,15 @@
                         <!--earning graph start-->
                         <section class="panel">
                             <header class="panel-heading">
-                               <label style="color:red"><b>@RenderSection("header", required:true)</b></label>
+                                <label style="color:red"><b>@RenderSection("header", required: true)</b></label>
                             </header>
                             <div class="panel-body">
+                                @if (TempData["AlertMessage"] != null)
+                                {
+                                    <div id="AlertBox" class="alert @TempData["AlertType"]" hide>
+                                        @TempData["AlertMessage"]
+                                    </div>
+                                }
                                 @RenderBody()
                             </div>
                         </section>
@@ -642,5 +646,6 @@
     <!--common script init for all pages-->
     <script src="~/Asset/admin/js/scripts.js"></script>
     <!--script for this page-->
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
 </body>
 </html>

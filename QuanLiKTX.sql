@@ -214,23 +214,27 @@ VALUES  ( N'C1.102' , -- MaPhong - nchar(15)
         )
 
 INSERT INTO dbo.PHONGSV
-        ( MaPhong ,
+        ( MaPhongSV ,
+		MaPhong,
           MaSV ,
           ThoiGianBĐ ,
           ThoiGianKT
         )
-VALUES  ( N'C1.101' , -- MaPhong - nchar(15)
+VALUES  (	N'1',
+			N'C1.101' , -- MaPhong - nchar(15)
           N'4051050084' , -- MaSV - nchar(15)
           '20190915' , -- ThoiGianBĐ - datetime
           '20200715' -- ThoiGianKT - datetime
         ),
-		( N'C1.101' , -- MaPhong - nchar(15)
-          N'405104401' , -- MaSV - nchar(15)
+		( N'2',
+		N'C1.101' , -- MaPhong - nchar(15)
+          N'4051050057' , -- MaSV - nchar(15)
           '20190915' , -- ThoiGianBĐ - datetime
           '20200715' -- ThoiGianKT - datetime
         ),
-		( N'C1.101' , -- MaPhong - nchar(15)
-          N'405104211' , -- MaSV - nchar(15)
+		(	N'3',
+			 N'C1.101' , -- MaPhong - nchar(15)
+          N'4051050001' , -- MaSV - nchar(15)
           '20190915' , -- ThoiGianBĐ - datetime
           '20200715' -- ThoiGianKT - datetime
         )

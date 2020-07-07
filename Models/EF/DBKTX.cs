@@ -19,6 +19,7 @@ namespace Models.EF
         public virtual DbSet<PHONG> PHONGs { get; set; }
         public virtual DbSet<PHONGSV> PHONGSVs { get; set; }
         public virtual DbSet<SINHVIEN> SINHVIENs { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -71,6 +72,10 @@ namespace Models.EF
                 .HasMany(e => e.PHONGSVs)
                 .WithRequired(e => e.PHONG)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<PHONGSV>()
+                .Property(e => e.MaPhongSV)
+                .IsFixedLength();
 
             modelBuilder.Entity<PHONGSV>()
                 .Property(e => e.MaPhong)
