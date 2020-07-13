@@ -51,16 +51,17 @@ namespace KTX.Controllers
                     SetAlert("Mã phòng sinh viên đã tồn tại", "error");
                     return RedirectToAction("Create", "QLPSV");
                 }
-                if (dao1.Find(sinhVien.MaSV) == null)
-                {
-                    SetAlert("Sinh viên hoặc phòng không có trong CSDL", "error");
-                    return RedirectToAction("Create", "QLPSV");
-                }
                 if (dao.Find(sinhVien.MaSV) != null)
                 {
                     SetAlert("Mã sinh viên này đã có phòng", "error");
                     return RedirectToAction("Create", "QLPSV");
                 }
+                if (dao1.Find(sinhVien.MaSV) == null && dao1.Find(sinhVien.MaPhong) == null)
+                {
+                    SetAlert("Sinh viên hoặc phòng không có trong CSDL", "error");
+                    return RedirectToAction("Create", "QLPSV");
+                }
+                
                 String result = dao.Insert(sinhVien);
 
                 if (!String.IsNullOrEmpty(result))

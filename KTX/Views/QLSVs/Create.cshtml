@@ -6,16 +6,16 @@
 }
 
 @section Header{
-    <h2 class="fa fa-home">
+    <h3 class="fa fa-home">
         @Html.ActionLink("Quản lý sinh viên", "Index", new { /* id=item.PrimaryKey */ })
-    </h2>
+    </h3>
 }
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    <div class="btn btn-info">
+    <div class="btn btn-primary">
         <p>
             @Html.ActionLink("Về danh sách", "Index", new { /*@class = "btn btn-primary"*/ })
         </p>
@@ -90,7 +90,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Thêm" class="btn btn-success" />
+                <input type="submit" value="Thêm" class="btn btn-primary" />
             </div>
         </div>
     </div>

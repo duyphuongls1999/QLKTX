@@ -54,12 +54,12 @@ namespace KTX.Controllers
                 String result = dao.Insert(sinhVien);
                 if (!String.IsNullOrEmpty(result))
                 {
-                    SetAlert("Thêm người dùng thành công", "success");
+                    SetAlert("Thêm sinh viên thành công", "success");
                     return RedirectToAction("Index", "QLSVs");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Thêm người dùng không thành công");
+                    ModelState.AddModelError("", "Thêm sinh viên không thành công");
                 }
             }
             return View();
